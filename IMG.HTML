@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> harsimran</title>
+
+<link rel="stylesheet" type="text/css" href="container.css"> 
+<link rel="stylesheet" type="text/css" href="styles.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="demo.css" media="all" />
+</head>
+<body> <div class="header">
+
+<DIV ID="LOGO"> <IMG Src "screen01.jpg" width=150px height=150px ></IMG>
+</DIV>
+<DIV ID="NAV"> 
+	<LI><A HREF="html.html" target="_blank">FORM</A> </LI>
+	<LI><A HREF="#">ABOUT</A> </LI>
+	<LI><A HREF="screen01.jpg" target="_blank">GALLERY</A> </LI> <LI><A HREF="#">SERVICE</A> </LI>
+	<LI><A HREF="#">CONTACT</A> </LI>
+	<LI><A HREF="https://google.com" target="_blank">GOOGLE</A> </LI>
+	</UL> </DIV>
+
+</div>
+
+<div class="container"></div> <div class="content"></div>
+
+<div class="section1"></div>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <!-- FlexSlider -->
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+    var $ = jQuery.noConflict();
+    $(window).load(function() {
+    $('.flexslider').flexslider({
+          animation: "fade"
+    });
+	
+	$(function() {
+		$('.show_menu').click(function(){
+				$('.menu').fadeIn();
+				$('.show_menu').fadeOut();
+				$('.hide_menu').fadeIn();
+		});
+		$('.hide_menu').click(function(){
+				$('.menu').fadeOut();
+				$('.show_menu').fadeIn();
+				$('.hide_menu').fadeOut();
+		});
+	});
+  });
+</script>	
+</body>
+</html>
